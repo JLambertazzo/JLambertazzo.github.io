@@ -1,15 +1,18 @@
-* {
-    font-family: cursive;
-}
-
-table{
-  border: 1px solid #8F4700;
-  border-collapse: collapse;
-  text-align: center;
-  padding: 15px;
-  background-color: burlywood
-}
-    
 body{
   margin-top: 50px;
+  background-color: white;
+}
+
+h1 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+h3 {
+    font-family: Georgia;
+    text-align: center;
+    border: thin solid blue;
+    color: blue;
+    background-color: white;
+    padding: 15px;
 }
