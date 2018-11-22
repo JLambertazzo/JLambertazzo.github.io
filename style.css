@@ -15,7 +15,10 @@ h1 {
 }
 
 li {
-    display: inline-block;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
 }
 
 #links {
