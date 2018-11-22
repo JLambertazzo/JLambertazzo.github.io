@@ -45,4 +45,5 @@ a {
     width: 100%;
     z-level: 0;
     position: fixed;
+    overflow: hidden;
 }
