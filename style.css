@@ -7,18 +7,22 @@ h1 {
     background-color: dodgerblue;
     color: white;
     text-align: center;
-    z-level: 1;
-    position: static;
+    z-index: 1;
+    position: absolute;
     top: 40px;
     height: 400px;
     width: 100%;
+}
+
+li {
+    display: inline-block;
 }
 
 #links {
 }
 
 a {
-    z-level: 2;
+    z-index: 2;
     position: relative;
     margin-top: 150px;
     display: inline;
@@ -34,10 +38,10 @@ a {
     font-weight: normal;
 }
 
-#selfie {
+.selfie {
     top: -150px;
     width: 100%;
-    z-level: 0;
+    z-index: 0;
     position: fixed;
     overflow: hidden;
 }
