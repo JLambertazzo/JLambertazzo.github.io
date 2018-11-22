@@ -12,6 +12,11 @@ h1 {
     background-color: dodgerblue;
     color: white;
     text-align: center;
+    z-level: 1;
+    position: relative;
+    top: 40px;
+    height: 400px;
+    width: 100%;
 }
 
 #links {
@@ -37,15 +42,8 @@ a {
 }
 
 #selfie {
+    top: -50px;
     width: 100%;
     z-level: 0;
     position: fixed;
-}
-
-#header {
-    z-level: 1;
-    position: relative;
-    top: 40px;
-    height: 400px;
-    width: 100%;
 }
