@@ -1,0 +1,15 @@
+* {
+    font-family: cursive;
+}
+
+table{
+  border: 1px solid #8F4700;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 15px;
+  background-color: burlywood
+}
+    
+body{
+  margin-top: 50px;
+}
