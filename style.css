@@ -13,11 +13,12 @@ h1 {
     text-align: center;
 }
 
-h3 {
+#links {
+    z-level: 2;
     display: inline-block;
-    font-family: Georgia;
+    font-family: Arial;
     text-align: center;
-    border: thick solid blue;
+    border: thin solid blue;
     color: black;
     background-color: white;
     padding: 15px;
@@ -30,4 +31,18 @@ a {
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
+}
+
+#selfie {
+    width: 100%;
+    z-level: 0;
+    position: fixed;
+}
+
+header {
+    z-level: 1;
+    position: absolute;
+    top: 40px;
+    height: 400px;
+    width: 100%;
 }
