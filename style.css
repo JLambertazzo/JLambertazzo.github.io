@@ -1,5 +1,6 @@
 * {
     font-family: Arial;
+    overflow: scroll;
 }
 
 body{
@@ -15,6 +16,8 @@ h1 {
 
 #links {
     z-level: 2;
+    position: relative;
+    top: 0;
     display: inline-block;
     font-family: Arial;
     text-align: center;
@@ -39,7 +42,7 @@ a {
     position: fixed;
 }
 
-header {
+#header {
     z-level: 1;
     position: relative;
     top: 40px;
