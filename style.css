@@ -16,3 +16,9 @@ h3 {
     background-color: white;
     padding: 15px;
 }
+
+a {
+    color: inherit;
+    font-style: normal;
+    font-weight: normal;
+}
