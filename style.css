@@ -127,3 +127,8 @@ img.example {
   position: relative;
   top: 50px;
 }
+
+#jScriptImg {
+  width: 50%;
+  height: auto;
+}
