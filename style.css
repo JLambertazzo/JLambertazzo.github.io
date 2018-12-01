@@ -123,7 +123,7 @@ img.selfie {
 
 img.example {
   overflow: hidden;
-  width: inherit;
+  width: 70%;
   position: relative;
   top: 50px;
 }
