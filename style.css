@@ -2,9 +2,6 @@
   font-family: 'Noto Serif SC', "Lato", serif;
   justify-self: center;
   text-align: center;
-
-body {
-
 }
 
 img.header {
@@ -37,7 +34,7 @@ p.desc {
   background-color: white;
   color: black;
   display: grid;
-  grid-template: repeat(12,1fr) / 1fr;
+  grid-template: repeat(16,1fr) / 1fr;
   position: relative;
   width: 80%;
   margin-left: auto;
