@@ -12,6 +12,30 @@ img.header {
   width: 110%;
 }
 
+#kyrie {
+  position: absolute;
+  top: 550px;
+  left: -150px;
+  width: 40%;
+  transform: rotate(20deg);
+}
+
+#steph {
+  position: absolute;
+  top: 1350px;
+  right: -150px;
+  width: 40%;
+  transform: rotate(-20deg);
+}
+
+#kobe {
+  position: absolute;
+  top: 2100px;
+  left: -50px;
+  width: 20%;
+  transform: rotate(-20deg);
+}
+
 p.quote {
   justify-self: center;
   font-size: 1.5em;
@@ -30,17 +54,20 @@ p.desc {
 }
 
 .main {
+  z-index: 8;
   top: 500px;
   background-color: white;
   color: black;
   display: grid;
-  grid-template: repeat(16,1fr) / 1fr;
+  grid-template: repeat(15,1fr) / 1fr;
   position: relative;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* individual elements of the main grid: */
+/*=======================================*/
 #header {
   grid-area: 1/1/1/1;
   justify-self: center;
@@ -76,7 +103,20 @@ p.desc {
   grid-area: 10/1/10/1;
 }
 
+#ballDesc {
+  grid-area: 11/1/11/1;
+}
+
 #pass {
-  grid-area: 12/1/12/1;
+  grid-area: 13/1/13/1;
   justify-self: center;
 }
+
+#passQuote {
+  grid-area: 14/1/14/1;
+}
+
+#passDesc {
+  grid-area: 15/1/15/1;
+}
+/*=======================================*/
