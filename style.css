@@ -1,9 +1,39 @@
 * {
-  background-color: orange;
-  color: white;
   font-family: 'Noto Serif SC', "Lato", serif;
 }
 
-h1 {
-  justify-content: center;
+body {
+
+}
+
+.main {
+  top: 500px;
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template: repeat(10,1fr) / 1fr;
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  grid-area: 1/1/1/1;
+  justify-self: center;
+}
+
+#shoot {
+  grid-area: 2/1/2/1;
+  justify-self: center;
+}
+
+#ball {
+  grid-area: 3/1/3/1;
+  justify-self: center;
+}
+
+#pass {
+  grid-area: 4/1/4/1;
+  justify-self: center;
 }
