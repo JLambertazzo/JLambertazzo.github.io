@@ -2,7 +2,6 @@
   font-family: 'Noto Serif SC', "Lato", serif;
   justify-self: center;
   text-align: center;
-}
 
 body {
 
@@ -25,6 +24,12 @@ p.quote {
 
 p.desc {
   width: 80%;
+}
+
+.main h2 {
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: underline;
 }
 
 .main {
@@ -57,9 +62,21 @@ p.desc {
   justify-self: center;
 }
 
+#shootQuote {
+  grid-area: 6/1/6/1;
+}
+
+#shootDesc {
+  grid-area: 7/1/7/1;
+}
+
 #ball {
   grid-area: 9/1/9/1;
   justify-self: center;
+}
+
+#ballQuote {
+  grid-area: 10/1/10/1;
 }
 
 #pass {
