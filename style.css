@@ -1,7 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 * {
+  background-color: orange;
+  color: white;
   font-family: 'Noto Serif SC', "Lato", serif;
 }
 
