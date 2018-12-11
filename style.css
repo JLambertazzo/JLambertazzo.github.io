@@ -16,26 +16,29 @@ img.header {
 
 #kyrie {
   position: absolute;
-  top: 550px;
+  top: 0px;
   left: -150px;
-  width: 40%;
+  width: 400px;
   transform: rotate(20deg);
+  grid-area: 4/1/4/1;
 }
 
 #steph {
   position: absolute;
-  top: 1350px;
+  top: 0px;
   right: -150px;
-  width: 40%;
+  width: 350px;
   transform: rotate(-20deg);
+  grid-area: 8/1/8/1;
 }
 
 #kobe {
   position: absolute;
-  top: 2100px;
+  top: 0px;
   left: -50px;
-  width: 20%;
+  width: 200px;
   transform: rotate(-20deg);
+  grid-area: 12/1/12/1;
 }
 
 p.quote {
