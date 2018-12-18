@@ -92,6 +92,7 @@ p.desc {
 #shoot {
   grid-area: 5/1/5/1;
   justify-self: center;
+  cursor: pointer;
 }
 
 #shootQuote {
@@ -105,6 +106,7 @@ p.desc {
 #ball {
   grid-area: 9/1/9/1;
   justify-self: center;
+  cursor: pointer;
 }
 
 #ballQuote {
@@ -118,6 +120,7 @@ p.desc {
 #pass {
   grid-area: 13/1/13/1;
   justify-self: center;
+  cursor: pointer;
 }
 
 #passQuote {
