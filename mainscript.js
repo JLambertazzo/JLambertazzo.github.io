@@ -1,13 +1,13 @@
 $(document).ready(()=>{
-  $("#shoot").click(()=>{
+  $("#shoot").on("click", ()=>{
     window.open("shooting.html", "_self");
   })
 
-  $("#ball").click(()=>{
+  $("#ball").on("click", ()=>{
     window.open("ballhandling.html", "_self");
   })
 
-  $("#pass").click(()=>{
+  $("#pass").on("click", ()=>{
     window.open("passing.html", "_self");
   })
 })
