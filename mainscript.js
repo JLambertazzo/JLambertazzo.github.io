@@ -15,11 +15,11 @@ $(document).ready(()=>{
     window.open("index.html", "_self");
   })
 
-  $(".subHeader").on("mouseenter", (event)=>{
+  $(".textExpand").on("mouseenter", (event)=>{
     $(event.currentTarget).animate({fontSize: "2.5em"})
   })
 
-  $(".subHeader").on("mouseleave", (event)=>{
+  $(".textExpand").on("mouseleave", (event)=>{
     $(event.currentTarget).animate({fontSize: "2em"})
   })
 })
