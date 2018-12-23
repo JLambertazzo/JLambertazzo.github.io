@@ -1,14 +1,18 @@
 $(document).ready(()=>{
-  $("#shoot").on("click", ()=>{
-    window.open("shooting.html", "_self");
+  $("#shoot").on("click", ()=>{ //WIP
+    window.open("underconstruction.html", "_self");
   })
 
-  $("#ball").on("click", ()=>{
-    window.open("ballhandling.html", "_self");
+  $("#ball").on("click", ()=>{ //WIP
+    window.open("underconstruction.html", "_self");
   })
 
-  $("#pass").on("click", ()=>{
-    window.open("passing.html", "_self");
+  $("#pass").on("click", ()=>{ //WIP
+    window.open("underconstruction.html", "_self");
+  })
+
+  $("#goBack").on("click", ()=>{
+    window.open("index.html", "_self");
   })
 
   $(".subHeader").on("mouseenter", (event)=>{
