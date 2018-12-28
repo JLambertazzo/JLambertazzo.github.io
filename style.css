@@ -6,6 +6,14 @@
 
 /* fuck you github */
 
+.homeButton {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  grid-area: 16/1/16/1;
+}
+
 img.header {
   position: fixed;
   display: block;
@@ -74,7 +82,7 @@ p.desc {
   margin-right: auto;
 }
 
-/* individual elements of the main grid: */
+/* individual elements of the main grid (index): */
 /*=======================================*/
 #header {
   grid-area: 1/1/1/1;
@@ -130,8 +138,13 @@ p.desc {
 #passDesc {
   grid-area: 15/1/15/1;
 }
+
 /*=======================================*/
-/* Under construction page */
-#goBack {
-  cursor: pointer;
+/* Shooting Page */
+#shootingHeader {
+  width: 120%;
+}
+
+#introHeader {
+  grid-area: 1/1/1/1;
 }
