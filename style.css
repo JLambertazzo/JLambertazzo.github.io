@@ -1,9 +1,25 @@
-*{
-  display: grid;
-  grid-template: 4/4/4/4;
+#mainText{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
 }
 
 h1, h3 {
-  justify-content: center;
-  align-content: center;
+}
+
+#mainTitle {
+  order: 1;
+}
+
+#subTitle {
+  order: 2;
 }
