@@ -1,0 +1,9 @@
+*{
+  display: grid;
+  grid-template: 4/4/4/4;
+}
+
+h1, h3 {
+  justify-content: center;
+  align-content: center;
+}
