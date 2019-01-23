@@ -1,4 +1,4 @@
-#mainText{
+#mainText {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -8,6 +8,19 @@
   align-content: center;
   height: 100%;
   font-family: "Aleo", serif;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 5%;
+  font-family: "Aleo", serif;
+  background-color: black;
+  opacity: 0.8;
 }
 
 #inviteText {
@@ -25,9 +38,8 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-h1, h3 {
+  margin: 0px;
+  padding-bottom: 50px;
 }
 
 #mainTitle {
@@ -45,4 +57,8 @@ h1, h3 {
   color: black;
   opacity: 0.3;
   border-radius: 5px;
+}
+
+.topButton {
+  color: white;
 }
