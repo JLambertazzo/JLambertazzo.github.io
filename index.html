@@ -1,26 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <head>
-     <title>Minecraft Server</title>
-     <link href="style.css" type="text/css" rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
-  </head>
-  <body>
-    <div id="header">
-      <h3 class="topButton" id="homeButton">First Button</h3>
-      <h3 class="topButton" id="aboutButton">Second Button</h3>
-      <h3 class="topButton" id="aboutMeButton">Third Button</h3>
-    </div>
-    <div id="mainText">
-      <div id="inviteText">
-        <h1 id="mainTitle">Join the Server:</h1>
-        <h3 id="subTitle">mc.jbertazzolambert.me</h3>
+
+<head>
+  <title>Save Our Seine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="js/jquery.animate-colors.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script-NavBar.js"></script>
+  <script src="js/loginbutton.js"></script>
+</head>
+
+<body>
+  <!-- BackGround -->
+  <div class="bg-navBar">
+    <!-- NavBAR -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand align-middle" href="#">Save Our Seine</a> <!-- TODO: add logo-->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--TODO: Create Proper color design-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <form id="check" class="form-inline d-none d-lg-block mr-sm-2" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" id="search" type="submit">Search</button>
+          </form>
+
+          <button class="btn btn-primary btn-login" id="loginButton" type="submit">Log In</button>
+        </ul>
+      </div>
+
+    </nav>
+    <br>
+
+    <div id="carouselContainer">
+      <div class="carousel slide" id="mainCarousel" data-ride="carousel">
+        <!-- Indicators: -->
+        <ol class="carousel-indicators">
+          <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mainCarousel" data-slide-to="1"></li>
+          <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/paddletheseine.jpg" style="width: 100%"/>
+            <div class="carousel-caption"><h3>The first caption!</h3></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/paddletheseine2.jpg" style="width: 100%; height: auto;"/>
+            <div class="carousel-caption"><h3>The second caption!</h3></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/paddletheseine3.jpg" style="width: 100%; height: auto;"/>
+            <div class="carousel-caption"><h3>The third caption!</h3></div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
       </div>
     </div>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="mainscript.js"></script>
-  </body>
+  </div>
+
+  <hr />
+  <h2 class="text-center">News </h2>
+  <h2 id="testaa">words</h2>
+  <hr />
+
+  <div class="news text-center">
+    <div class="panel panel-default ">
+      <div class="row justify-content-center ">
+        <div class="col-2 news-panal"><img src="#.jpg" height="180px" width="300px"></div>
+        <div class="col-4 news-panal">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-left news-head">Tree Planting Event</div>
+                <div class="panel-body fixed-panel text-left">
+                  <h4 class="news-cont">We are holding a Tree Planting event at the Niakwa Trail Rain Garden on Thursday, September 21. We need volunteers to help us plant 30 trees and shrubs that were donated through the Re-Leaf Project. Ace Bobcat Services will start digging each hole but holes need to be finished with the help of volunteers. Volunteers are needed to plant the trees, add mulch, and water the newly planted trees. Please meet us at the garden any time after 3 p.m. Bring hand digging tools, spades, buckets, and a wheelbarrow (if you can). Some tools will be available. Thanks to Wilma Sotas for pulling this event together. The rain garden is at the corner of Fermor and St. Anne’s Road. Volunteers can park in the Superstore parking lot. See the map/poster attached.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm text-left news-sub">September 20, 2017</div>
+                <div class="col-sm text-right news-sub">Michele Kading</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="col text-center">
+      <button id="singlebutton" name="singlebutton" class="btn btn-loutline">See More</button>
+  </div>
+
+</body>
+
 </html>

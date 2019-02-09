@@ -1,0 +1,22 @@
+Home Page:
+	-Events Carousel
+	-News
+	-Summarized about us?
+About SOS:
+	-Goals
+	-History
+	-Awards
+	-Partners
+	-Contact Us
+Events:
+	-SOS Meetings
+	-List of Upcoming Events
+	-List of Current Projects
+News:
+	-Any current/relevant news
+	-Basically everything from "Reading Room"
+Enjoy the Seine:
+	-Trail Maps
+Support SOS:
+	-Donate
+	-Volunteer
