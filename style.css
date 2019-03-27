@@ -1,64 +1,25 @@
-#mainText {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  font-family: "Aleo", serif;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+
+* {
+  background: black;
+  font-family: "Baloo Chettan";
+  color: white;
 }
 
-#header {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-shrink: 1;
-  justify-content: space-around;
-  align-items: center;
-  height: 5%;
-  font-family: "Aleo", serif;
-  background-color: black;
-  opacity: 0.8;
-}
-
-#inviteText {
-  background-color: black;
-  opacity: 0.3;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: center;
-  border-radius: 15px;
-}
-
-html, body {
-  height: 100%;
-  background-image: url("newbackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+body {
+  display: grid;
   margin: 0px;
-  padding-bottom: 50px;
+  grid-template-rows: 10vh, auto;
 }
 
-#mainTitle {
-  order: 1;
-  color: white;
-  opacity: 0.3;
-  justify-self: center;
+header, header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
 }
 
-#subTitle {
-  order: 2;
-  background-color: white;
-  font-size: 2em;
-  padding: 15px;
-  color: black;
-  opacity: 0.3;
-  border-radius: 5px;
-}
-
-.topButton {
-  color: white;
+#game {
+  width: 100%;
+  height: 80vh;
 }
