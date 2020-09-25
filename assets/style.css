@@ -2,6 +2,10 @@ body {
     display: grid;
     place-items: center;
     background: deepskyblue;
+    @font-face {
+        font-family: LandasansMedium;
+        src: url("LandasansMedium.otf");
+    }
 }
 
 div {
@@ -12,4 +16,5 @@ div {
     display: grid;
     place-items: center;
     box-shadow: 5px 10px #888888;
+    font-family: LandasansMedium, sans-serif;
 }
