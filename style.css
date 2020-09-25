@@ -8,5 +8,8 @@ div {
     background: khaki;
     border-radius: 15px;
     padding: 2vh;
+    margin: 2vh;
+    display: grid;
+    place-items: center;
     box-shadow: 5px 10px #888888;
 }
