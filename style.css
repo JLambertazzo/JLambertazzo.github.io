@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    place-items: center;
+    background: deepskyblue;
+}
+
+div {
+    background: khaki;
+    border-radius: 15px;
+    padding: 2vh;
+    box-shadow: 5px 10px #888888;
+}
