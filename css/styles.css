@@ -10,3 +10,7 @@ html {
 body {
   padding-top: 56px;
 }
+
+.external-link-list p {
+  margin: 0;
+}
