@@ -17,6 +17,10 @@
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
 
+  <!-- Bootstrap core JavaScript -->
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/">Julien Bertazzo Lambert</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-rel="noopener" rel="noopener" target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -53,7 +57,7 @@
         <img class="image-fluid img-thumbnail mb-3" src="img/avatar.webp" alt="Julien">
         <div class="list-group">
           <a href="#summary" class="list-group-item list-group-item-action text-dark">Summary</a>
-          <a href="#link-section" class="list-group-item list-group-item-action text-dark">External Links</a>
+          <a href="#external-links" class="list-group-item list-group-item-action text-dark">External Links</a>
           <a href="#resume" class="list-group-item list-group-item-action text-dark">Resume</a>
         </div>
       </div>
@@ -78,14 +82,14 @@
         </div>
         <!-- /.card -->
 
-        <div class="card card-outline-secondary my-4" id="link-section">
+        <div class="card card-outline-secondary my-4" id="external-links">
           <div class="card-header">
             External Links
           </div>
-          <div class="list-group external-link-list">
-            <p><a href="https://github.com/JLambertazzo" class="text-dark list-group-item list-group-item-action" rel="noopener" target="_blank">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/julien-bl/" class="text-dark list-group-item list-group-item-action" rel="noopener" target="_blank">LinkedIn</a></p>
-            <p><a href="https://devpost.com/jbertazzolambert" class="text-dark list-group-item list-group-item-action" rel="noopener" target="_blank">Devpost</a></p>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action text-dark" href="https://github.com/JLambertazzo" rel="noopener" target="_blank">GitHub</a>
+            <a class="list-group-item list-group-item-action text-dark" href="https://www.linkedin.com/in/julien-bl/" rel="noopener" target="_blank">LinkedIn</a>
+            <a class="list-group-item list-group-item-action text-dark" href="https://devpost.com/jbertazzolambert" rel="noopener" target="_blank">Devpost</a>
           </div>
         </div>
         <!-- /.card -->
