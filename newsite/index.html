@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
+    <script defer type='text/javascript' src='js/index.js'></script>
+    <link rel="stylesheet" href="tailwind.css">
+    <title>JulienBL</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- first fullscreen view -->
+    <div class="grid place-items-center w-screen h-screen bg-blue-300"> 
+        <!-- Info Card -->
+        <div class="w-10/12 h-4/6 bg-gray-100 p-2 rounded-lg shadow-lg flex flex-col" style="min-height:fit-content;">
+            <h1 class="text-5xl text-center font-bold text-gray-800 mb-4 px-2">Julien Bertazzo Lambert</h1>
+            <h2 class="text-2xl text-center font-semibold text-gray-400 px-2">Full Stack Web Developer - Student @ University of Toronto</h2>
+            <!-- Meat of the card -->
+            <div class="grid grid-cols-10 gap-2 my-4 px-2 row-span-4">
+                <!-- icons -->
+                <div class="flex flex-col justify-around items-end text-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    <h1>icon2</h1>
+                    <h1>icon3</h1>
+                </div>
+                <!-- image -->
+                <div class="col-span-3 grid place-items-center">
+                    <img class="rounded-lg" src="img/julien_.jpg" alt="Avatar">
+                </div>
+                <!-- content -->
+                <div class="col-span-6 font-semibold flex flex-col justify-items-center h-full text-sm md:text-lg">
+                    <p>Aloubi Judy <3</p>
+                    <p>Judy Naamani eats raw loubye</p>
+                    <br>
+                    <p>Student of Computer Science and Economics at the University of Toronto</p>
+                    <br>
+                    <p>
+                        I've been working as a Full Stack Web Developer for the Ministry of Health for over half a year.
+                        In my free time I love to make my own projects. Web development is my specialty but I also love
+                        trying new technologies.
+                    </p>
+                    <br>
+                    <p>
+                        Scroll down to see examples of my work, or check my resume 
+                        <a href="https://www.julienbl.me/resume/CSResume_JBL2021.min.pdf" class="text-blue-400 underline">here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second view: proficiencies -->
+    <div class="w-screen grid place-items-center h-96 bg-gray-100">
+        <ul>
+            <h2>Proficiencies:</h2>
+            <li>Typescript/Javascript/Node.js <progress value="100" class="outline-black" /></li>
+            <li>HTML/CSS <progress value="100"/></li>
+            <li>Python <progress value="90" /></li>
+            <li>Java <progress value="80" class="outline-black" /></li> 
+            <li>MongoDB <progress value="90" /></li>
+        </ul>
+    </div>
+    <!-- third view: MealPlanner -->
+    <div class="w-screen grid place-items-center h-96 bg-gray-100">
+        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+            <!-- gif demo -->
+            <div class="col-span-2 grid place-items-center mx-2">
+                <img src="img/mealplanner.webp" alt="MealPlanner demo">
+            </div>
+            <div class="col-span-4">
+                <h2>MealPlanner</h2>
+                <h3>An organization app to help you plan your meals and shopping</h3>
+                <br>
+                <p>
+                    Use our services to keep track of what you plan to eat when, and what you have in your pantry.
+                    We organize your meals and ingredients to make shopping a breeze. Eliminate waste, save time and money,
+                    try MealPlanner today!
+                </p>
+                <br>
+                <a href="https://the-meal-planner.herokuapp.com" class="bg-blue-500 rounded shadow-lg p-1 font-semibold text-gray-100">Try it Yourself!</a>
+                <br>
+                <br>
+                <p>
+                    Technologies used: <br>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Typescript</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Node.js</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">MongoDB</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">React</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">CSS</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- fourth view: FourQuadrant -->
+    <div class="w-screen grid place-items-center h-96 bg-gray-100">
+        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+            <div class="col-span-4">
+                <h2>FourQuadrant</h2>
+                <h3>A productivity app to help you organize your tasks</h3>
+                <br>
+                <p>
+                    Supercharge your to-do list with the organizational power of the Eisenhower Priority Matrix. Make sticky notes
+                    to place them according to their importance and urgency. Share your
+                    board with colleagues and collaborate remotely in real time!
+                </p>
+                <br>
+                <a href="https://www.fourquadrant.tech" class="bg-blue-500 rounded shadow-lg p-1 font-semibold text-gray-100">Try it Yourself!</a>
+                <br>
+                <br>
+                <p>
+                    Technologies used: <br>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Javascript</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Node.js</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Socket.io</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">HTML</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">CSS</span>
+                </p>
+            </div>
+            <!-- gif demo -->
+            <div class="col-span-2 grid place-items-center">
+                <img src="img/board.gif" alt="FourQuadrant demo">
+            </div>
+        </div>
+    </div>
+    <!-- fifth view: ListExtender -->
+    <div class="w-screen grid place-items-center h-96 bg-gray-100">
+        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+            <!-- gif demo -->
+            <div class="col-span-2 grid place-items-center mx-2">
+                <img src="img/listextender.png" alt="ListExtender demo">
+            </div>
+            <div class="col-span-4">
+                <h2>ListExtender</h2>
+                <h3>A Javascript library for simple dynamic lists</h3>
+                <br>
+                <p id="list-add-after">
+                    The easiest way to collect a variable number of inputs from your end users. Delightfully simple and easy to use.
+                    Try it yourself right here:
+                </p>
+                <div id='list-container' class="h-12 overflow-y-scroll"></div>
+                <br>
+                <a href="https://www.julienbl.me/ListExtender" class="bg-blue-500 rounded shadow-lg p-1 font-semibold text-gray-100">Learn More!</a>
+                <br>
+                <p>
+                    Technologies used: <br>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Javascript</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">HTML</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">CSS</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- sixth view: FastApi_CockroachDB -->
+    <div class="w-screen grid place-items-center h-96 bg-gray-100">
+        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+            <!-- gif demo -->
+            <div class="col-span-2 bg-gray-100">
+                <img src="#" alt="FastApi_CockroachDB demo">
+            </div>
+            <div class="col-span-4">
+                <h2>FastApi_CockroachDB</h2>
+                <h3>A tutorial on how to quickly and easily launch your own API</h3>
+                <br>
+                <p>
+                    An interest in making APIs and a curiosity for python web development led me to this combination of techs.
+                    I put together this tutorial for my own reference as well as to help others get an API going easily.
+                </p>
+                <br>
+                <a href="https://github.com/JLambertazzo/FastApi_CockroachDB" class="bg-blue-500 rounded shadow-lg p-1 font-semibold text-gray-100">Learn More!</a>
+                <br>
+                <br>
+                <p>
+                    Technologies used: <br>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">Python</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">FastApi</span>
+                    <span class="bg-blue-500 rounded-xl shadow p-1 text-gray-100">CockroachDB</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
