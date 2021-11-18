@@ -6,46 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
     <script defer type='text/javascript' src='js/index.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="tailwind.css">
     <title>JulienBL</title>
 </head>
 <body class="overflow-x-hidden">
     <!-- first fullscreen view -->
     <div class="grid place-items-center w-screen h-screen bg-blue-300"> 
-        <!-- Info Card -->
-        <div class="w-10/12 h-4/6 bg-gray-100 p-2 rounded-lg shadow-lg flex flex-col" style="min-height:fit-content;">
-            <h1 class="text-5xl text-center font-bold text-gray-800 mb-4 px-2">Julien Bertazzo Lambert</h1>
-            <h2 class="text-2xl text-center font-semibold text-gray-400 px-2">Full Stack Web Developer - Student @ University of Toronto</h2>
-            <!-- Meat of the card -->
-            <div class="grid grid-cols-10 gap-2 my-4 px-2 row-span-4">
-                <!-- icons -->
-                <div class="flex flex-col justify-around items-end text-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
-                    <h1>icon2</h1>
-                    <h1>icon3</h1>
-                </div>
-                <!-- image -->
-                <div class="col-span-3 grid place-items-center">
-                    <img class="rounded-lg" src="img/julien_.jpg" alt="Avatar">
-                </div>
-                <!-- content -->
-                <div class="col-span-6 font-semibold flex flex-col justify-items-center h-full text-sm md:text-lg">
-                    <p>Aloubi Judy <3</p>
-                    <p>Judy Naamani eats raw loubye</p>
-                    <br>
-                    <p>Student of Computer Science and Economics at the University of Toronto</p>
-                    <br>
-                    <p>
-                        I've been working as a Full Stack Web Developer for the Ministry of Health for over half a year.
-                        In my free time I love to make my own projects. Web development is my specialty but I also love
-                        trying new technologies.
-                    </p>
-                    <br>
-                    <p>
-                        Scroll down to see examples of my work, or check my resume 
-                        <a href="https://www.julienbl.me/resume/CSResume_JBL2021.min.pdf" class="text-blue-400 underline">here</a>
-                    </p>
-                </div>
+        <!-- Info Card (flipper) -->
+        <div class="flipper w-10/12 h-96 bg-gray-100 p-2 rounded-lg shadow-lg grid grid-cols-10 gap-0 relative" style="min-height:16rem;">
+            <!-- image -->
+            <div class="col-span-3 grid place-items-center invisible md:visible">
+                <img class="h-80" src="img/julien_.jpg" alt="Me!">
+            </div>
+            <!-- text -->
+            <div class="col-span-9 md:col-span-7">
+                <h1 class="text-5xl text font-bold text-gray-800 mb-4 px-2">Julien Bertazzo Lambert</h1>
+                <h2 class="text-2xl text font-semibold text-gray-400 px-2">Full Stack Web Developer - Student @ University of Toronto</h2>
+                <br>
+                <p>
+                    I've been working as a Full Stack Web Devloper for the Ontario Ministry of Health for over half a year. In my free time
+                    I love to make my own projects. Web Development is my specialty, but I love trying new technologies!
+                </p>
+                <br>
+                <p>
+                    Scroll down to see examples of my work, or flip this card to see a summary.
+                </p>
+            </div>
+            <!-- flip thingy -->
+            <div class="absolute left-full top-full transform -translate-x-full -translate-y-full w-max p-2 text-gray-500 font-semibold text-xl cursor-pointer">
+                Click me 
+                <span class="material-icons transform rotate-180 align-middle">undo</span>
             </div>
         </div>
     </div>
