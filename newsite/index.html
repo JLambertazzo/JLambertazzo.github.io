@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/2bd299be0e.js" crossorigin="anonymous"></script>
     <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
     <script defer type='text/javascript' src='js/index.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,12 +17,12 @@
     <div class="grid place-items-center w-screen h-screen bg-blue-300">
         <div class="flip-container w-full h-full relative" onclick="this.classList.toggle('hover');">
             <!-- Info Card (flipper) -->
-            <div class="flipper cursor-pointer w-9/12 h-4/6 bg-gray-100 p-2 rounded-lg shadow-lg relative" style="min-height:16rem;">
+            <div class="flipper cursor-pointer w-9/12 h-3/6 bg-gray-100 p-2 rounded-lg shadow-lg relative" style="min-height:16rem;">
                 <!-- front view -->
                 <div class="front w-full h-full flex items-center pl-2">
-                    <img src="img/julien_.jpg" class="h-5/6 rounded p-2 hidden md:block" alt="Picture of me!">
-                    <div class="flex flex-col pr-2">
-                        <h1 class="text-gray-800 lg:text-5xl md:text-2xl font-bold">Julien B.L.</h1>
+                    <img src="img/julien_.jpg" class="h-5/6 rounded m-2 hidden md:block rounded-xl shadow-lg" alt="Picture of me!" style="max-height: 300px;">
+                    <div class="flex flex-col pr-2 h-full justify-evenly" style="max-height: 300px;">
+                        <h1 class="text-indigo-500 lg:text-5xl md:text-2xl font-extrabold">Julien Bertazzo Lambert</h1>
                         <h2 class="text-gray-500 lg:text-2xl md:text-xl font-semibold">Full Stack Developer - Student @ UofT</h2>
                         <hr  class="h-1 bg-gray-300">
                         <br>
@@ -56,19 +57,35 @@
         </div>
     </div>
     <!-- second view: proficiencies -->
-    <div class="w-screen grid place-items-center h-96 bg-gray-100">
-        <ul>
-            <h2>Proficiencies:</h2>
-            <li>Typescript/Javascript/Node.js <progress value="100" class="outline-black" /></li>
-            <li>HTML/CSS <progress value="100"/></li>
-            <li>Python <progress value="90" /></li>
-            <li>Java <progress value="80" class="outline-black" /></li> 
-            <li>MongoDB <progress value="90" /></li>
-        </ul>
+    <div class="w-screen text-center h-96 bg-gray-100 grid grid-rows-10">
+        <div></div>
+        <h1 class="text-3xl text-gray-800 font-bold">Developing in:</h1>
+        <div class="w-full h-3/6 flex flex-wrap justify-evenly row-span-8">
+            <div class="mx-8">
+                <span class="text-5xl md:text-9xl text-yellow-400"><i class="fab fa-js"></i></span>
+                <h2 class="md:text-xl font-bold text-gray-800">Javascript/Typescript</h2>
+            </div>
+            <div class="mx-8">
+                <span class="text-5xl md:text-9xl text-yellow-600"><i class="fab fa-html5"></i></span>
+                <h2 class="md:text-xl font-bold text-gray-800">HTML/CSS</h2>
+            </div>
+            <div class="mx-8">
+                <span class="text-5xl md:text-9xl text-blue-300"><i class="fab fa-react"></i></span>
+                <h2 class="md:text-xl font-bold text-gray-800">React</h2>
+            </div>
+            <div class="mx-8">
+                <span class="text-5xl md:text-9xl text-blue-800"><i class="fab fa-python"></i></span>
+                <h2 class="md:text-xl font-bold text-gray-800">Python</h2>
+            </div>
+            <div class="mx-8">
+                <span class="text-5xl md:text-9xl text-yellow-800"><i class="fab fa-java"></i></span>
+                <h2 class="md:text-xl font-bold text-gray-800">Java</h2>
+            </div>
+        </div>
     </div>
     <!-- third view: MealPlanner -->
     <div class="w-screen grid place-items-center h-96 bg-gray-100">
-        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+        <div class="w-10/12 h-full bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
             <!-- gif demo -->
             <div class="col-span-2 grid place-items-center mx-2">
                 <img src="img/mealplanner.webp" alt="MealPlanner demo">
@@ -99,7 +116,7 @@
     </div>
     <!-- fourth view: FourQuadrant -->
     <div class="w-screen grid place-items-center h-96 bg-gray-100">
-        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+        <div class="w-10/12 h-full bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
             <div class="col-span-4">
                 <h2>FourQuadrant</h2>
                 <h3>A productivity app to help you organize your tasks</h3>
@@ -130,7 +147,7 @@
     </div>
     <!-- fifth view: ListExtender -->
     <div class="w-screen grid place-items-center h-96 bg-gray-100">
-        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+        <div class="w-10/12 h-full bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
             <!-- gif demo -->
             <div class="col-span-2 grid place-items-center mx-2">
                 <img src="img/listextender.png" alt="ListExtender demo">
@@ -158,7 +175,7 @@
     </div>
     <!-- sixth view: FastApi_CockroachDB -->
     <div class="w-screen grid place-items-center h-96 bg-gray-100">
-        <div class="w-10/12 h-5/6 bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
+        <div class="w-10/12 h-full bg-gray-200 p-2 rounded-lg shadow-lg grid grid-cols-6" style="min-height:fit-content;">
             <!-- gif demo -->
             <div class="col-span-2 bg-gray-100">
                 <img src="#" alt="FastApi_CockroachDB demo">
