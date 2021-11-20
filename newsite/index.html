@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://kit.fontawesome.com/2bd299be0e.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="https://www.julienbl.me/rain-machine/rainmachine.js"></script>
     <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
     <script defer type='text/javascript' src='js/index.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,8 +15,8 @@
 </head>
 <body class="overflow-x-hidden">
     <!-- first fullscreen view -->
-    <div class="grid place-items-center w-screen h-screen bg-blue-300">
-        <div class="flip-container w-full h-full relative" onclick="this.classList.toggle('hover');">
+    <div class="grid place-items-center w-screen h-screen bg-blue-300 rain-container">
+        <div class="flip-container w-full h-full relative rain-content z-10" onclick="this.classList.toggle('hover');">
             <!-- Info Card (flipper) -->
             <div class="flipper cursor-pointer w-9/12 h-3/6 bg-gray-100 p-2 rounded-lg shadow-lg relative" style="min-height:16rem;">
                 <!-- front view -->
