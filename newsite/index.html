@@ -9,9 +9,9 @@
     <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
     <script defer type='text/javascript' src='js/index.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>JulienBL</title>
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="tailwind.css" crossorigin="anonymous">
+    <title>Julien BL</title>
 </head>
 <body class="overflow-x-hidden">
     <!-- first fullscreen view -->
@@ -87,32 +87,85 @@
     <!-- third view: Projects -->
     <div class="w-full bg-gray-100">
         <!-- project display in middle -->
-        <div class="w-9/12 bg-gray-200 rounded-lg m-auto p-2">
+        <div class="w-9/12 bg-gray-200 rounded-lg mx-auto p-2 shadow-lg">
             <h1 class="text-center text-gray-800 font-bold text-5xl mb-8">Check out some of my work!</h1>
             <!-- first proj: MealPlanner -->
             <div class="flex flex-col md:flex-row">
                 <!-- proj img -->
-                <div>
-                    <img src="img/mealplanner.webp" alt="Meal Planner demo">
+                <div class="w-8/12 md:w-3/12 mx-auto md:mx-4">
+                    <img class="rounded-lg shadow-lg" src="img/mealplanner2.png" alt="Meal Planner demo">
                     <h2 class="text-gray-800 font-semibold text-center mt-px">Technologies used:</h2>
                     <div class="flex flex-wrap justify-evenly p-2">
-                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px font-bold">Typescript</span>
-                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px font-bold">Node.js</span>
-                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px font-bold">React</span>
-                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px font-bold">MongoDB</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Typescript</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Node.js</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">React</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">MongoDB</span>
                     </div>
                 </div>
                 <!-- proj content -->
-                <div class="ml-2 w-9/12">
+                <div class="ml-2 w-full md:w-9/12 text-center md:text-left">
                     <h1 class="font-bold text-gray-800 text-3xl">MealPlanner</h1>
                     <p class="font-semibold text-gray-500 text-xl">Organize your meals. Save time, food and money!</p>
                     <hr  class="h-1 bg-gray-300 my-2 w-11/12">
-                    <p>Use our services to keep track of what you plan to eat when, and what you have in your pantry. We organize your meals and ingredients to make shopping a breeze. Eliminate waste, save time and money, try MealPlanner today!</p>
+                    <p class="w-11/12">Use our services to keep track of what you plan to eat when, and what you have in your pantry. We organize your meals and ingredients to make shopping a breeze. Eliminate waste, save time and money, try MealPlanner today!</p>
+                    <br>
+                    <a href="https://the-meal-planner.herokuapp.com" class="bg-gray-300 text-blue-800 font-semibold p-1 rounded-lg">Try it Yourself!</a>
+                </div>
+            </div>
+            <br>
+            <hr class="h-1 bg-gray-300 my-2 w-full">
+            <br>
+            <!-- second proj: FourQuadrant -->
+            <div class="flex flex-col-reverse md:flex-row">
+                <!-- proj content -->
+                <div class="ml-2 w-full md:w-9/12 text-center md:text-left">
+                    <h1 class="font-bold text-gray-800 text-3xl">FourQuadrant</h1>
+                    <p class="font-semibold text-gray-500 text-xl">Supercharge your to-do list! Prioritize your tasks like a pro.</p>
+                    <hr  class="h-1 bg-gray-300 my-2 w-11/12">
+                    <p class="w-11/12">We use the Eisenhower Matrix to help you organize your tasks. Simply place them in the respective quadrant based on importance and urgency, and when it's time to work you'll know just what to do. Collaborate easily with any number of users on the same board. Try FourQuadrant by clicking the link below!</p>
+                    <br>
+                    <a href="https://the-meal-planner.herokuapp.com" class="bg-gray-300 text-blue-800 font-semibold p-1 rounded-lg">Try it Yourself!</a>
+                </div>
+                <!-- proj img -->
+                <div class="w-8/12 md:w-3/12 mx-auto md:mx-4">
+                    <img class="rounded-lg shadow-lg" src="img/board2.gif" alt="Four Quadrant demo">
+                    <h2 class="text-gray-800 font-semibold text-center mt-px">Technologies used:</h2>
+                    <div class="flex flex-wrap justify-evenly p-2">
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Javascript</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Socket.io</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Node.js</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">React</span>
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="h-1 bg-gray-300 my-2 w-full">
+            <br>
+            <!-- second proj: FourQuadrant -->
+            <div class="flex flex-col md:flex-row">
+                <!-- proj img -->
+                <div class="w-8/12 md:w-3/12 mx-auto md:mx-4">
+                    <img class="rounded-lg shadow-lg" src="img/listextender23.gif" alt="ListExtender demo">
+                    <h2 class="text-gray-800 font-semibold text-center mt-px">Technologies used:</h2>
+                    <div class="flex flex-wrap justify-evenly p-2">
+                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px font-bold">Javascript</span>
+                    </div>
+                </div>
+                <!-- proj content -->
+                <div class="ml-2 w-full md:w-9/12 text-center md:text-left">
+                    <h1 class="font-bold text-gray-800 text-3xl">ListExtender</h1>
+                    <p class="font-semibold text-gray-500 text-xl">The easiest dynamic list elements. Your users will thank you later.</p>
+                    <hr  class="h-1 bg-gray-300 my-2 w-11/12">
+                    <p class="w-11/12">A small javascript library which provides simplicity for developers and an intuitive experience for users. Collect a dynamic list of inputs with only a few lines of code! All kinds of input, as well as easy custom validation are supported. Try it youself below and click the link to learn more.</p>
+                    <br>
+                    <div id="list-container" class="h-24 overflow-y-scroll w-min"></div>
                     <br>
                     <a href="https://the-meal-planner.herokuapp.com" class="bg-gray-300 text-blue-800 font-semibold p-1 rounded-lg">Try it Yourself!</a>
                 </div>
             </div>
         </div>
+        <br>
     </div>
 </body>
 </html>
