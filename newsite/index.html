@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://kit.fontawesome.com/2bd299be0e.js" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="https://www.julienbl.me/rain-machine/rainmachine.js"></script>
+    <script defer type="text/javascript" src="js/rainmachine.js"></script>
     <script defer type='text/javascript' src='https://www.julienbl.me/ListExtender/lib/ListExtender.min.js'></script>
     <script defer type='text/javascript' src='js/index.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,7 +47,7 @@
                 <!-- back view -->
                 <div class="back w-full h-full flex flex-col md:flex-row items-center pl-2">
                     <!-- back-content -->
-                    <div class="w-full h-full md:w-5/12 flex-col flex items-start justify-evenly py-4">
+                    <div class="w-max h-max md:w-full md:h-full md:w-5/12 flex-col flex items-start justify-evenly py-4">
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Education:</h2>
                             <div class="my-px flex items-center">
@@ -59,7 +59,6 @@
                                 </span>
                             </div>
                         </div>
-                        <hr>
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Current Role:</h2>
                             <div class="my-px flex items-center">
@@ -71,7 +70,6 @@
                                 </span>
                             </div>
                         </div>
-                        <hr>
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Experienced In:</h2>
                             <div class="my-px flex items-center">
@@ -82,8 +80,10 @@
                                 </span>
                             </div>
                         </div>
+                        <hr>
+                        <a href="#" class="font-semibold py-px px-1 rounded-lg text-gray-100 bg-blue-900 text-l">Resume</a>
                     </div>
-                    <div class="w-full h-full flex flex-col p-4" style="border-left:dashed 2px lightgray">
+                    <div class="w-full h-full flex flex-col p-4 md:visible invisible" style="border-left:dashed 2px lightgray;">
                         <h1 class="text-3xl font-bold text-indigo-800">Highlights</h1>
                         <div>
                             <h2 class="text-xl font-semibold text-gray-500">Developing for the Web</h2>
@@ -193,7 +193,7 @@
             <br>
             <hr class="h-1 bg-gray-300 my-2 w-full">
             <br>
-            <!-- second proj: FourQuadrant -->
+            <!-- third proj: ListExtender -->
             <div class="flex flex-col md:flex-row" id="ListExtender">
                 <!-- proj img -->
                 <div class="w-8/12 md:w-3/12 mx-auto md:mx-4">
@@ -215,6 +215,7 @@
                     <a href="https://the-meal-planner.herokuapp.com" class="bg-gray-300 text-blue-800 font-semibold p-1 rounded-lg">Try it Yourself!</a>
                 </div>
             </div>
+            <!-- TODO: Rain Machine makes 4 which is good - I'm thinking of a show-more button that shows: -->
         </div>
         <br>
     </div>
