@@ -243,7 +243,7 @@
         ${query} .cloud-main {
             width: 12rem;
             height: 4rem;
-            background: ivory;
+            background: ${precipitation !== 'none' ? 'lightgray' : ivory};
             opacity: 0.9;
             position: absolute;
             border-radius: 50px;
@@ -254,7 +254,7 @@
         ${query} .cloud-sub {
             position: absolute;
             border-radius: 50%;
-            background: ivory;
+            background: ${precipitation !== 'none' ? 'lightgray' : ivory};
         }
         `))
         styleSheet.appendChild(document.createTextNode(`
