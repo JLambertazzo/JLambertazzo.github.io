@@ -342,7 +342,7 @@
             const mainHeight = Math.random()*4 + 3;
             const mainWidth = mainHeight*3.4//Math.random()*2 + 14;
             clouds += `
-            <div class="cloud-main" style="width:${mainWidth}rem;height:${mainHeight}rem;top:${cloudHeight}%;animation-delay:-${delay}s;animation-duration:${duration}s;z-index:${zIndex};">
+            <div class="cloud-main" style="width:${mainWidth}rem;height:${mainHeight}rem;top:${cloudHeight}%;animation-delay:-${delay}s;animation-duration:${duration}s;z-index:${zIndex};left:-40vw;">
                 <div class="cloud-sub" style="height:${mainHeight}rem;width:${mainHeight}rem;top:-50%;left:15%;"></div>
                 <div class="cloud-sub" style="height:${mainHeight*1.5}rem;width:${mainHeight*1.5}rem;top:-70%;left:40%;"></div>
             </div>

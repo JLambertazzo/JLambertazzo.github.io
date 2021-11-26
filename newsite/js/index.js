@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const rm = new RainMachine('.rain-container', { precipitation: Math.floor(Math.random() * 2) > 0 ? 'rain' : 'snow', wind: Math.floor(Math.random() * 3) })
+    fetch('https://salty-brook-12944.herokuapp.com/weather/Toronto').then(res => res.json()).then(json => {
+        new RainMachine('.rain-container', json)
+    })
     const myList = new ListExtender();
     myList.appendTo('#list-container');
     myList.setPlaceholder('Type Here!');
