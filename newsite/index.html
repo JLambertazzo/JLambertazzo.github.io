@@ -23,7 +23,7 @@
                 <div class="front w-full h-full flex items-center pl-2">
                     <img src="img/julien_.jpg" class="h-5/6 rounded m-2 hidden md:block rounded-xl shadow-lg" alt="Picture of me!" style="max-height: 300px;">
                     <div class="flex flex-col pr-2 h-full justify-evenly" style="max-height: 300px;">
-                        <h1 class="text-indigo-800 lg:text-5xl md:text-2xl font-extrabold">Julien Bertazzo Lambert</h1>
+                        <h1 class="text-blue-800 lg:text-5xl md:text-2xl font-extrabold sky-colour">Julien Bertazzo Lambert</h1>
                         <h2 class="text-gray-500 lg:text-2xl md:text-xl font-semibold">Full Stack Developer - Student @ UofT</h2>
                         <hr  class="h-1 bg-gray-300">
                         <br>
@@ -53,7 +53,7 @@
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Education:</h2>
                             <div class="my-px flex items-center">
-                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10"><i class="fa-solid fa fa-graduation-cap"></i></span>
+                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10 sky-colour"><i class="fa-solid fa fa-graduation-cap"></i></span>
                                 <span class="text-sm text-gray-800 font-semibold">
                                     University of Toronto <br>
                                     3rd Year <br>
@@ -64,7 +64,7 @@
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Current Role:</h2>
                             <div class="my-px flex items-center">
-                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10"><i class="fa-solid fa fa-briefcase"></i></span>
+                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10 sky-colour"><i class="fa-solid fa fa-briefcase"></i></span>
                                 <span class="text-sm text-gray-800 font-semibold">
                                     Ontario Ministry of Health <br>
                                     May 2021 - Present <br>
@@ -75,7 +75,7 @@
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-xl">Experienced In:</h2>
                             <div class="my-px flex items-center">
-                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10"><i class="fas fa-tools"></i></span>
+                                <span class="text-indigo-800 text-3xl font-bold mr-2 w-10 sky-colour"><i class="fas fa-tools"></i></span>
                                 <span class="text-sm text-gray-800 font-semibold">
                                     Web Development <br>
                                     Open Source <br>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="w-full h-full flex flex-col p-4 md:visible invisible" style="border-left:dashed 2px lightgray;">
-                        <h1 class="text-3xl font-bold text-indigo-800">Highlights</h1>
+                        <h1 class="text-3xl font-bold text-indigo-800 sky-colour">Highlights</h1>
                         <div>
                             <h2 class="text-xl font-semibold text-gray-500">Developing for the Web</h2>
                             <p class="text-sm text-gray-900 ml-4">Worked on 7 Full Stack Web Applications for work, school, hackathons, and personal projects</p>
@@ -107,11 +107,14 @@
                 </div>
             </div>
             <div 
-                class="absolute top-full transform -translate-y-full w-max p-2 text-gray-500 font-semibold text-xl cursor-pointer"
+                class="absolute top-full transform -translate-y-full w-max ml-2 p-2 text-gray-500 font-semibold text-xl cursor-pointer"
             >
                 <h2 class="text-sm">Current Weather In</h2>
-                <i class="fas fa-map-marker-alt"></i>
-                Toronto, Ontario
+                <span id="weather-loading">Loading...</span>
+                <span class="hidden" id="weather-loaded">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Toronto, Ontario
+                </span>
             </div>
         </div>
     </div>
@@ -145,7 +148,7 @@
     <!-- third view: Projects -->
     <div class="w-full bg-gray-100">
         <!-- project display in middle -->
-        <div class="w-9/12 bg-gray-200 rounded-lg mx-auto p-2 shadow-lg">
+        <div class="w-9/12 bg-gray-200 rounded-lg mx-auto p-2 shadow-md">
             <h1 class="text-center text-gray-800 font-bold text-5xl mb-8">Check out some of my work!</h1>
             <!-- first proj: MealPlanner -->
             <div class="flex flex-col md:flex-row" id="MealPlanner">
