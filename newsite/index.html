@@ -35,8 +35,8 @@
                         <br>
                         <p class="text-sm md:text-md text-gray-800 font-semibold">
                             Links: <br>
-                            <a href="https://github.com/JLambertazzo" class="mr-2"><i class="fab fa-github md:text-3xl py-px px-1 rounded-lg hover:bg-gray-200"></i></a>
-                            <a href="https://linkedin.com/in/julien-bl" class="mr-2"><i class="fab fa-linkedin-in text-blue-600 md:text-3xl py-px px-1 rounded-lg hover:bg-gray-200"></i></a>
+                            <a href="https://github.com/JLambertazzo" class="mr-2"><i class="fab fa-github md:text-3xl py-px sky-colour px-1 rounded-lg hover:bg-gray-200"></i></a>
+                            <a href="https://linkedin.com/in/julien-bl" class="mr-2"><i class="fab fa-linkedin-in sky-colour md:text-3xl py-px px-1 rounded-lg hover:bg-gray-200"></i></a>
                         </p>
                         <div 
                             class="absolute left-full top-full transform -translate-x-full -translate-y-full w-max p-2 text-gray-500 font-semibold text-xl cursor-pointer"
@@ -49,7 +49,7 @@
                 <!-- back view -->
                 <div class="back w-full h-full flex flex-col md:flex-row items-center pl-2">
                     <!-- back-content -->
-                    <div class="w-max h-max md:w-full md:h-full md:w-5/12 flex-col flex items-start justify-evenly py-4">
+                    <div class="w-max h-max md:w-full md:h-full md:w-max flex-col mx-auto p-2 flex items-start justify-evenly py-4">
                         <div class="flex flex-col items-start">
                             <h2 class="font-semibold text-sm md:text-xl">Education:</h2>
                             <div class="my-px flex items-center">
@@ -90,10 +90,11 @@
                             <p class="text-sm text-gray-900 ml-4">Worked on 7 Full Stack Web Applications for work, school, hackathons, and personal projects</p>
                             <p class="text-sm text-gray-900 ml-6"><i class="fas fa-level-up-alt transform rotate-90 mr-1"></i> Check out: <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#MealPlanner">MealPlanner</a></span> <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#FourQuadrant">FourQuadrant</a></span></p>
                         </div>
+                        <br>
                         <div>
                             <h2 class="text-xl font-semibold text-gray-500">Improving the Dev Experience</h2>
                             <p class="text-sm text-gray-900 ml-4">Developed Javascript libraries to save devs time and trouble</p>
-                            <p class="text-sm text-gray-900 ml-6"><i class="fas fa-level-up-alt transform rotate-90 mr-1"></i> Check out: <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#ListExtender-view">ListExtender</a></span> <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#RainMachine">Rain Machine</a></span></p>
+                            <p class="text-sm text-gray-900 ml-6"><i class="fas fa-level-up-alt transform rotate-90 mr-1"></i> Check out: <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#ListExtender-view">ListExtender</a></span> <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#RainMachine-view">Rain Machine</a></span></p>
                             <p class="text-sm text-gray-900 ml-4">Created a template/instructions for launching an API quickly</p>
                             <p class="text-sm text-gray-900 ml-6"><i class="fas fa-level-up-alt transform rotate-90 mr-1"></i> Check out: <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="#FastApi_CockroachDB">FastApi_CockroachDB</a></span></p>
                         </div>
@@ -149,7 +150,7 @@
     <div class="w-full bg-gray-100">
         <!-- project display in middle -->
         <div class="w-9/12 bg-gray-200 rounded-lg mx-auto p-2 shadow-md">
-            <h1 class="text-center text-gray-800 font-bold text-5xl mb-8">Check out some of my work!</h1>
+            <h1 class="text-center text-gray-800 font-bold text-5xl mb-8">My Projects:</h1>
             <!-- first proj: MealPlanner -->
             <div class="flex flex-col md:flex-row" id="MealPlanner">
                 <!-- proj img -->
@@ -195,7 +196,6 @@
                         <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Javascript</span>
                         <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Socket.io</span>
                         <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Node.js</span>
-                        <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">React</span>
                         <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">HTML/CSS</span>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
             <div class="flex flex-col md:flex-row" id="RainMachine-view">
                 <!-- proj img -->
                 <div class="w-8/12 md:w-3/12 mx-auto md:mx-4">
-                    <div class="rounded-lg shadow-lg relative rain-container-2" style="height:210px;width:270px;"><div class="rain-content"></div></div>
+                    <div class="rounded-lg shadow-lg relative rain-container-2 w-full" style="height:210px;"><div class="rain-content"></div></div>
                     <h2 class="text-gray-800 font-semibold text-center mt-px">Technologies used:</h2>
                     <div class="flex flex-wrap justify-evenly p-2">
                         <span class="bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold">Javascript</span>
@@ -223,6 +223,8 @@
                     <p class="font-semibold text-gray-500 text-xl">A Javascript library and API to easily display live weather.</p>
                     <hr  class="h-1 bg-gray-300 my-2 w-11/12">
                     <p class="w-11/12">The box <span class="inline md:hidden">above</span><span class="hidden md:inline">to the left</span> is showing a pure-css animation of the current weather in my hometown Winnipeg, Manitoba! This project gives you an easy way to include weather animations in your site using either specified or live conditions. Try it out by typing a city in the box below and click learn more to see a full demo.</p>
+                    <br>
+                    <p class="w-11/12" id="FastApi_CockroachDB">This project was made using an API template I created to help developers get an API up and running quickly. To learn more click <span class="text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300"><a href="https://github.com/JLambertazzo/FastApi_CockroachDB">here</a></span></p>
                     <br>
                     <input class="my-2 px-2 py-px" type="text" name="search" id="search">
                     <button class="bg-blue-900 text-gray-100 font-bold px-2 py-px" id="search-btn" onclick="search()">Search</button>
