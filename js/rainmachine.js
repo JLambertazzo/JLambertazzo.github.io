@@ -231,8 +231,9 @@
         `))
         styleSheet.appendChild(document.createTextNode(`
         ${query} .sun {
-            width: 8rem;
-            height: 8rem;
+            width: 0;
+            height: 0;
+            padding: 5%;
             position: absolute;
             top: ${10 - 9/Math.max(Math.abs(50-sunPos),1)}%;
             left: ${sunPos % 200}%;
@@ -261,8 +262,9 @@
         ${query} .rm--moon {
             background: rgb(211,211,211);
             background: linear-gradient(328deg, rgba(211,211,211,1) 0%, rgba(195,195,195,1) 50%);
-            width: 8rem;
-            height: 8rem;
+            width: 0;
+            height: 0;
+            padding: 5%;
             border-radius: 50%;
             position: absolute;
             top: ${10 - 9/Math.max(Math.abs(150-sunPos),1)}%;
@@ -326,9 +328,9 @@
         if (sunAndMoon) {
             moon = `
                 <div class="rm--moon">
-                    <div class="crater" style="width:2.5rem;height:2.5rem;bottom:20%;left:55%;"></div>
-                    <div class="crater" style="width:0.9rem;height:0.9rem;bottom:55%;left:75%;"></div>
-                    <div class="crater" style="width:2.1rem;height:2.1rem;bottom:60%;left:35%;"></div>
+                    <div class="crater" style="padding:15%;bottom:20%;left:55%;"></div>
+                    <div class="crater" style="padding:5%;bottom:55%;left:75%;"></div>
+                    <div class="crater" style="padding:10%;bottom:60%;left:35%;"></div>
                 </div>
             `
         }
@@ -339,12 +341,12 @@
             const delay = Math.random()*20 + i
             const duration = (Math.random()*5 + 40)/(wind/2 + 1)
             const zIndex = Math.random() >= 0.4 ? 7 : 1
-            const mainHeight = Math.random()*4 + 3;
-            const mainWidth = mainHeight*3.4//Math.random()*2 + 14;
+            const mainHeight = Math.random()*3 + 1;
+            const mainWidth = mainHeight*2.2//Math.random()*2 + 14;
             clouds += `
-            <div class="cloud-main" style="width:${mainWidth}rem;height:${mainHeight}rem;top:${cloudHeight}%;animation-delay:-${delay}s;animation-duration:${duration}s;z-index:${zIndex};left:-40vw;">
-                <div class="cloud-sub" style="height:${mainHeight}rem;width:${mainHeight}rem;top:-50%;left:15%;"></div>
-                <div class="cloud-sub" style="height:${mainHeight*1.5}rem;width:${mainHeight*1.5}rem;top:-70%;left:40%;"></div>
+            <div class="cloud-main" style="width:0;height:0;padding:${mainHeight}% ${mainWidth}%;top:${cloudHeight}%;animation-delay:-${delay}s;animation-duration:${duration}s;z-index:${zIndex};left:-40vw;">
+                <div class="cloud-sub" style="height:0;width:0;padding:20% 20%;top:-27%;left:10%;"></div>
+                <div class="cloud-sub" style="height:0;width:0;padding:30% 30%;top:-37%;left:35%;"></div>
             </div>
             `
         }
