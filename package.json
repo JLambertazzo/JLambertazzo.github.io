@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwindcss -i ./input.css -o ./tailwind.css",
+    "tw:dev": "tailwindcss -i ./input.css -o ./tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3"
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "tailwindcss": "^3.4.1"
   }
 }
