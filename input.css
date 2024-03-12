@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .text-link {
+        @apply text-indigo-800 underline font-semibold bg-gray-200 hover:bg-gray-300;
+    }
+
+    .highlight-text {
+        @apply text-sm text-gray-900 ml-4;
+    }
+
+    .tech-used {
+        @apply bg-blue-900 text-gray-100 rounded-lg px-2 py-px my-px font-bold;
+    }
+}
