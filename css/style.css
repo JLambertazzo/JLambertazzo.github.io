@@ -1,16 +1,16 @@
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
- -webkit-perspective: 1000px;
- -o-perspective: 1000px;
- -moz-perspective: 1000px;
+	-webkit-perspective: 1000px;
+	-o-perspective: 1000px;
+	-moz-perspective: 1000px;
 }
 /* flip the pane when hovered */
 .flip-container.hover .flipper {
 	transform: rotateY(180deg) translate(50%,-50%);
- -moz-transform: rotateY(180deg) translate(50%,-50%);
- -webkit-transform: rotateY(180deg) translate(50%,-50%);
- -o-transform: rotateY(180deg) translate(50%,-50%);
+	-moz-transform: rotateY(180deg) translate(50%,-50%);
+	-webkit-transform: rotateY(180deg) translate(50%,-50%);
+	-o-transform: rotateY(180deg) translate(50%,-50%);
 }
 
 /* flip speed goes here */
@@ -18,12 +18,12 @@
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	transform: translate(-50%,-50%);
- -webkit-transform-style: preserve-3d;
- -webkit-transition: transform 0.6s;
- -o-transform-style: preserve-3d;
- -o-transition: transform 0.6s;
- -moz-transform-style: preserve-3d;
- -moz-transition: transform 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: transform 0.6s;
+	-o-transform-style: preserve-3d;
+	-o-transition: transform 0.6s;
+	-moz-transform-style: preserve-3d;
+	-moz-transition: transform 0.6s;
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -32,9 +32,9 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
- -moz-backface-visibility: hidden;
- -webkit-backface-visibility: hidden;
- -o-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 
 	position: absolute;
 	top: 0;
@@ -46,15 +46,15 @@
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
- -moz-transform: rotateY(0deg);
- -webkit-transform: rotateY(0deg);
- -o-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
- -moz-transform: rotateY(180deg);
- -webkit-transform: rotateY(180deg);
- -o-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
 }
