@@ -2139,12 +2139,24 @@ video {
   padding: 0.5rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-32 {
+  padding: 8rem;
+}
+
+.p-40 {
+  padding: 10rem;
 }
 
 .px-1 {
@@ -2368,11 +2380,6 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -2856,6 +2863,22 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:p-32 {
+    padding: 8rem;
+  }
+
+  .md\:p-64 {
+    padding: 16rem;
+  }
+
+  .md\:p-56 {
+    padding: 14rem;
+  }
+
+  .md\:p-48 {
+    padding: 12rem;
   }
 
   .md\:text-left {
